@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 
 suite('View My Grades page', function() {
   test('Page title', async function() {
-    let res = await fetch("http://localhost:8090/My-Grades");
+    let res = await fetch("http://localhost:8888/My-Grades");
     let body = await res.text();
     assert.ok(body.includes("<h1>My Grades</h1>"));
   });
